@@ -199,7 +199,7 @@ module privateEndpoint '../networking/private-endpoint.bicep' = if (!useExisting
   }
 }
 
-var roleDefinitions = loadJsonContent('../../data/roleDefinitions.json')
+/* var roleDefinitions = loadJsonContent('../../data/roleDefinitions.json')
 
 resource cosmosDBOperatorRole 'Microsoft.Authorization/roleDefinitions@2022-04-01' existing = {
   name: roleDefinitions.cosmos.operatorRoleId
@@ -271,7 +271,7 @@ resource containerRoleAssignmentUserContainer 'Microsoft.DocumentDB/databaseAcco
     sessionsContainers
     chatContainers
   ]
-}]
+}] */
 
 // --------------------------------------------------------------------------------------------------------------
 // Outputs
